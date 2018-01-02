@@ -1,0 +1,11 @@
+{% if all_clothess %}
+    <ul>
+        {% for clothes in all_clothes %}
+        <li>
+            <a href="/pakaian/{{ clothes.id }}/">{{ clothes.brand }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+{% else%}
+    <h3>You dont have any Clothes</h3>
+{% endif %}
